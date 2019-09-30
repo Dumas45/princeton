@@ -45,7 +45,7 @@ public class RandomConnections {
      * @param N Number of dots
      * @param p probability of lines
      */
-    public static void plot(int N, double p) {
+    private static void plot(int N, double p) {
         Dot[] dots = new Dot[N];
 
         circle(CENTER_X, CENTER_Y, RADIUS);
