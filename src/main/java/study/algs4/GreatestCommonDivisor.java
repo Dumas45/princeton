@@ -7,12 +7,10 @@ public class GreatestCommonDivisor {
      * Greatest common divisor
      * Euclidean algorithm
      */
-    public static int gcd(int a, int b) {
-        if (a < 1 || b < 1) throw new IllegalArgumentException();
-
-        int min;
-        int max;
-        int tmp;
+    public static long gcd(long a, long b) {
+        long min;
+        long max;
+        long tmp;
         if (a > b) {
             min = b;
             max = a;
@@ -20,6 +18,7 @@ public class GreatestCommonDivisor {
             min = a;
             max = b;
         }
+        if (min < 0 || max < 1) throw new IllegalArgumentException();
 
         while (min != 0 && min != max) {
             tmp = max % min;
