@@ -1,4 +1,4 @@
-package org.test;
+package study.algs4;
 
 import java.util.concurrent.ThreadLocalRandom;
 

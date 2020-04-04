@@ -1,4 +1,4 @@
-package exercise_1_2_16;
+package study.algs4.exercise_1_2_16;
 
 import java.util.Objects;
 
