@@ -31,28 +31,38 @@ public class Rational {
      * sum of this number and b
      */
     public Rational plus(Rational b) {
-        throw new UnsupportedOperationException();
+        long gcd = gcd(this.denominator, b.denominator);
+        long numerator = this.numerator * (b.denominator / gcd);
+        numerator += b.numerator * (this.denominator / gcd);
+        long denominator = this.denominator * (b.denominator / gcd);
+
+        return new Rational(numerator, denominator);
     }
 
     /**
      * difference of this number and b
      */
     public Rational minus(Rational b) {
-        throw new UnsupportedOperationException();
+        long gcd = gcd(this.denominator, b.denominator);
+        long numerator = this.numerator * (b.denominator / gcd);
+        numerator -= b.numerator * (this.denominator / gcd);
+        long denominator = this.denominator * (b.denominator / gcd);
+
+        return new Rational(numerator, denominator);
     }
 
     /**
      * product of this number and b
      */
     public Rational times(Rational b) {
-        throw new UnsupportedOperationException();
+        return new Rational(this.numerator * b.numerator, this.denominator * b.denominator);
     }
 
     /**
      * quotient of this number and b
      */
     public Rational dividedBy(Rational b) {
-        throw new UnsupportedOperationException();
+        return new Rational(this.numerator * b.denominator, this.denominator * b.numerator);
     }
 
     @Override
@@ -79,8 +89,6 @@ public class Rational {
      * Euclidean algorithm
      */
     private static long gcd(long a, long b) {
-        if (a < 1 || b < 1) throw new IllegalArgumentException();
-
         long min;
         long max;
         long tmp;
@@ -91,6 +99,7 @@ public class Rational {
             min = a;
             max = b;
         }
+        if (min < 0 || max < 1) throw new IllegalArgumentException();
 
         while (min != 0 && min != max) {
             tmp = max % min;
@@ -103,10 +112,5 @@ public class Rational {
         }
 
         return max;
-    }
-
-    public static void main(String[] args) {
-        Rational r = new Rational(158, 34);
-        System.out.println(r);
     }
 }
