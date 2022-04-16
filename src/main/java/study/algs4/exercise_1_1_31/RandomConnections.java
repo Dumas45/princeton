@@ -1,13 +1,13 @@
 package study.algs4.exercise_1_1_31;
 
-import edu.princeton.cs.algs4.StdRandom;
+import edu.princeton.cs.introcs.StdRandom;
 
 import java.awt.Color;
 
-import static edu.princeton.cs.algs4.StdDraw.circle;
-import static edu.princeton.cs.algs4.StdDraw.filledCircle;
-import static edu.princeton.cs.algs4.StdDraw.line;
-import static edu.princeton.cs.algs4.StdDraw.setPenColor;
+import static edu.princeton.cs.introcs.StdDraw.circle;
+import static edu.princeton.cs.introcs.StdDraw.filledCircle;
+import static edu.princeton.cs.introcs.StdDraw.line;
+import static edu.princeton.cs.introcs.StdDraw.setPenColor;
 
 /**
  * Exercise 1.1.31 Random connections.

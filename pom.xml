@@ -26,9 +26,9 @@
 
     <dependencies>
         <dependency>
-            <groupId>edu.princeton.cs</groupId>
-            <artifactId>algs4</artifactId>
-            <version>1.0.4</version>
+            <groupId>com.googlecode.princeton-java-introduction</groupId>
+            <artifactId>stdlib</artifactId>
+            <version>1.0.1</version>
         </dependency>
 
         <dependency>

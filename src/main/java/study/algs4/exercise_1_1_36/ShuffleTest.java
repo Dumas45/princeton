@@ -1,6 +1,6 @@
 package study.algs4.exercise_1_1_36;
 
-import edu.princeton.cs.algs4.StdRandom;
+import edu.princeton.cs.introcs.StdRandom;
 
 /**
  * Exercise 1.1.36 Empirical shuffle check

@@ -1,7 +1,7 @@
 package study.algs4.exercise_1_1_32;
 
-import edu.princeton.cs.algs4.StdDraw;
-import edu.princeton.cs.algs4.StdIn;
+import edu.princeton.cs.introcs.StdDraw;
+import edu.princeton.cs.introcs.StdIn;
 
 import java.awt.Color;
 import java.text.DecimalFormat;
