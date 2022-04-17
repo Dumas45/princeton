@@ -3,7 +3,13 @@ package study.algs4.exercise_1_1_36;
 import edu.princeton.cs.introcs.StdRandom;
 
 /**
- * Exercise 1.1.36 Empirical shuffle check
+ * <p>Exercise 1.1.36 Empirical shuffle check
+ *
+ * <p>How to run the exercise "main" method from the CLI with parameters using the Maven:
+ * <pre>{@code
+ *   mvn compile exec:java -Dexec.mainClass="study.algs4.exercise_1_1_36.ShuffleTest" -Dexec.args="10 5"
+ * }</pre>
+ *
  * @author Alexei
  */
 public class ShuffleTest {

@@ -11,7 +11,7 @@ import java.util.Arrays;
 import static java.lang.System.lineSeparator;
 
 /**
- * Exercise 1.1.32 Histogram.
+ * <p>Exercise 1.1.32 Histogram.
  * Suppose that the standard input stream is a sequence of
  * double values. Write a program that takes an integer N
  * and two double values l and r from the command line and
@@ -19,6 +19,11 @@ import static java.lang.System.lineSeparator;
  * numbers in the standard input stream that fall in each
  * of the N intervals defined by dividing (l, r) into N
  * equal-sized intervals.
+ *
+ * <p>How to run the exercise "main" method from the CLI with parameters using the Maven (run it from the project root directory):
+ * <pre>{@code
+ *   mvn compile exec:java -Dexec.mainClass="study.algs4.exercise_1_1_32.Histogram" -Dexec.args="7 20 80" < target/classes/exercise_1_1_32_input.txt
+ * }</pre>
  *
  * @author Alexei
  */
@@ -101,7 +106,7 @@ public class Histogram {
         }
 
         StdDraw.line(LEFT_X - 0.05, BOTTOM_Y, RIGHT_X + 0.05, BOTTOM_Y);
-        DecimalFormat df = new DecimalFormat("#.###");
+        DecimalFormat df = new DecimalFormat("#.#");
         int intervals = Math.min(MAX_MARKS - 1, counts.length);
         double interval = (r - l) / intervals;
         double step = (RIGHT_X - LEFT_X) / intervals;

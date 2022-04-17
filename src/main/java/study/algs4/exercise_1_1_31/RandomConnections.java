@@ -10,12 +10,17 @@ import static edu.princeton.cs.introcs.StdDraw.line;
 import static edu.princeton.cs.introcs.StdDraw.setPenColor;
 
 /**
- * Exercise 1.1.31 Random connections.
+ * <p>Exercise 1.1.31 Random connections.
  * Write a program that takes as command-line arguments an integer N
  * and a double value p (between 0 and 1), plots N equally spaced dots
  * of size .05 on the circumference of a circle, and then, with
  * probability p for each pair of points, draws a gray line connecting
  * them.
+ *
+ * <p>How to run the exercise "main" method from the CLI with parameters using the Maven:
+ * <pre>{@code
+ *   mvn compile exec:java -Dexec.mainClass="study.algs4.exercise_1_1_31.RandomConnections" -Dexec.args="20 0.5"
+ * }</pre>
  *
  * @author Alexei
  */
