@@ -2,10 +2,13 @@ package study.algs4.exercise_1_1_32;
 
 import edu.princeton.cs.introcs.StdDraw;
 import edu.princeton.cs.introcs.StdIn;
+import edu.princeton.cs.introcs.StdOut;
 
 import java.awt.Color;
 import java.text.DecimalFormat;
 import java.util.Arrays;
+
+import static java.lang.System.lineSeparator;
 
 /**
  * Exercise 1.1.32 Histogram.
@@ -31,6 +34,9 @@ public class Histogram {
         if (N < 1) throw new IllegalArgumentException("wrong argument N");
         if (l >= r) throw new IllegalArgumentException("wrong arguments: l and r");
 
+        StdOut.print(lineSeparator());
+        StdOut.print("Enter numbers (use Ctrl-D to stop typing) :");
+        StdOut.print(lineSeparator());
         double[] values = StdIn.readAllDoubles();
 
         plot(N, l, r, values);
